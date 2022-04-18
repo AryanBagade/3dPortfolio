@@ -16,7 +16,8 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-// import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub } from 'react-icons/io5'
+import { FaPatreon } from 'react-icons/fa'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -76,18 +77,18 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          {/* <LinkItem
+          <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://www.patreon.com/aryanBagade"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
           >
-            <IoLogoGithub />
+            <FaPatreon />
             Source
-          </LinkItem> */}
+          </LinkItem>
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton></ThemeToggleButton>
@@ -109,10 +110,7 @@ const Navbar = props => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
+                <MenuItem as={Link} href="https://www.patreon.com/aryanBagade">
                   View Source
                 </MenuItem>
               </MenuList>
