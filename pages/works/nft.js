@@ -5,14 +5,14 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="LeoKrypt">
+  <Layout title="nft">
     <Container>
       <Title>
-        LeoKrypt <Badge>2022</Badge>
+        NFT display application <Badge>2021</Badge>
       </Title>
       <P>
-        Web Application, which will transfer ethereum crypto currency from your
-        wallet to the provided wallet address.
+        React Application, which will transfer ethereum crypto currency from
+        your wallet to the provided wallet address.
         <br />
         Frontend has been deployed using react via vite tool. Smart-Contract has
         been created using solidity via hardhat(ethereum development
@@ -27,10 +27,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Github</Meta>
-          <Link
-            href="https://drive.google.com/drive/folders/1WSUkSSCdwELvIQOJ_ZhWuIhGmdmmTnHs?usp=sharing"
-            target="_blank"
-          >
+          <Link href="https://github.com/AryanBagade/LeoKrypt" target="_blank">
             github.com/LeoKrypt <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>

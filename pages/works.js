@@ -23,7 +23,7 @@ const Works = () => {
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem id="NFT" title="NFT Gallery" thumbnail={thumbNFT}>
+          <WorkGridItem id="nft" title="NFT Gallery" thumbnail={thumbNFT}>
             NFT Display Application
           </WorkGridItem>
         </Section>
