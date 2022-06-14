@@ -14,9 +14,9 @@ const Posts = () => (
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <GridItem
-            title="Work in Progress"
-            thumbnail={thumbinProgress}
-            href="/"
+            title="Build your first dApp from scratch (part-1)"
+            thumbnail="https://miro.medium.com/max/1400/1*f797kY4_Rn1lj0fZ8utFdQ.png"
+            href="https://medium.com/@AryanBagade/build-your-first-dapp-from-scratch-part-1-d04eddb02116"
           />
         </SimpleGrid>
       </Section>
