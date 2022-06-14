@@ -3,6 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
+import thumbinProgress from '../public/images/works/wip.png'
 import thumbArticle1 from '../public/images/works/buildDapp.png'
 
 const Posts = () => (
