@@ -5,6 +5,7 @@ import { GridItem } from '../components/grid-item'
 
 import thumbinProgress from '../public/images/works/wip.png'
 import thumbArticle1 from '../public/images/works/buildDapp.png'
+import thumbArticle2 from '../public/images/works/ethereumApi.jpeg'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -18,6 +19,11 @@ const Posts = () => (
             title="Build your first dApp from scratch (part-1)"
             thumbnail={thumbArticle1}
             href="https://medium.com/@AryanBagade/build-your-first-dapp-from-scratch-part-1-d04eddb02116"
+          />
+          <GridItem
+            title="Build your first dApp from scratch (part-1)"
+            thumbnail={thumbArticle2}
+            href="https://medium.com/@AryanBagade/ethereum-apis-1c4e9ab24476"
           />
         </SimpleGrid>
       </Section>
