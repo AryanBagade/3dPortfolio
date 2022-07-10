@@ -16,7 +16,7 @@ const Posts = () => (
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <GridItem
-            title="Build your first dApp from scratch (part-1)"
+            title="Ethereum APIs"
             thumbnail={thumbArticle1}
             href="https://medium.com/@AryanBagade/build-your-first-dapp-from-scratch-part-1-d04eddb02116"
           />
