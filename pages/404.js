@@ -97,7 +97,7 @@ const NotFound = () => {
         
         <Box position="relative" zIndex={10}>
           <NextLink href="/">
-            <Button colorScheme="teal" size={['md', 'lg']}>Return to home</Button>
+            <Button colorScheme="teal">Return to home</Button>
           </NextLink>
         </Box>
       </VStack>
