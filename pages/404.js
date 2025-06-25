@@ -17,8 +17,8 @@ const FuzzyText = dynamic(() => import('../components/FuzzyText'), {
   ssr: false,
   loading: () => (
     <Box textAlign="center">
-      <Heading as="h1" mb={4}>404</Heading>
-      <Text>Page Not Found</Text>
+      <Heading as="h1" mb={4} fontSize={['4xl', '5xl', '6xl']}>404</Heading>
+      <Text fontSize={['lg', 'xl', '2xl']}>Page Not Found</Text>
     </Box>
   )
 })
@@ -38,14 +38,14 @@ const NotFound = () => {
       <Box pt={[8, 12, 16]} />
       
       <VStack spacing={6} py={8} position="relative" zIndex={10}>
-        {/* 404 heading with fuzzy effect - Balanced responsive sizing */}
+        {/* 404 heading with fuzzy effect - Mobile-first responsive sizing */}
         <Box position="relative" zIndex={10}>
           {mounted ? (
             <FuzzyText 
               baseIntensity={0.3} 
               hoverIntensity={0.6} 
               enableHover={true}
-              fontSize="clamp(3.5rem, 15vw, 6rem)"
+              fontSize="72px"
               color={textColor}
               fontFamily="'M PLUS Rounded 1c', sans-serif"
               fontWeight={700}
@@ -55,24 +55,25 @@ const NotFound = () => {
           ) : (
             <Heading 
               as="h1" 
-              fontSize="clamp(3.5rem, 15vw, 6rem)"
+              fontSize={['72px', '96px', '120px']}
               fontFamily="'M PLUS Rounded 1c', sans-serif"
               fontWeight={700}
               color={textColor}
+              lineHeight="1"
             >
               404
             </Heading>
           )}
         </Box>
 
-        {/* Page Not Found text with subtle fuzzy effect - Balanced mobile and desktop */}
+        {/* Page Not Found text with subtle fuzzy effect - Mobile optimized */}
         <Box maxW="400px" mx="auto" position="relative" zIndex={10}>
           {mounted ? (
             <FuzzyText 
               baseIntensity={0.08} 
               hoverIntensity={0.3} 
               enableHover={true}
-              fontSize="clamp(1.25rem, 5vw, 1.75rem)"
+              fontSize="24px"
               color={textColor}
               fontFamily="'M PLUS Rounded 1c', sans-serif"
               fontWeight={400}
@@ -81,10 +82,11 @@ const NotFound = () => {
             </FuzzyText>
           ) : (
             <Text 
-              fontSize="clamp(1.25rem, 5vw, 1.75rem)"
+              fontSize={['24px', '28px', '32px']}
               fontFamily="'M PLUS Rounded 1c', sans-serif"
               fontWeight={400}
               color={textColor}
+              lineHeight="1.2"
             >
               Page Not Found
             </Text>
@@ -95,7 +97,7 @@ const NotFound = () => {
         
         <Box position="relative" zIndex={10}>
           <NextLink href="/">
-            <Button colorScheme="teal">Return to home</Button>
+            <Button colorScheme="teal" size={['md', 'lg']}>Return to home</Button>
           </NextLink>
         </Box>
       </VStack>
