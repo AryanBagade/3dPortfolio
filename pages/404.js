@@ -38,14 +38,14 @@ const NotFound = () => {
       <Box pt={[8, 12, 16]} />
       
       <VStack spacing={6} py={8} position="relative" zIndex={10}>
-        {/* 404 heading with fuzzy effect */}
+        {/* 404 heading with fuzzy effect - Balanced responsive sizing */}
         <Box position="relative" zIndex={10}>
           {mounted ? (
             <FuzzyText 
               baseIntensity={0.3} 
               hoverIntensity={0.6} 
               enableHover={true}
-              fontSize="clamp(4rem, 12vw, 8rem)"
+              fontSize="clamp(3.5rem, 15vw, 6rem)"
               color={textColor}
               fontFamily="'M PLUS Rounded 1c', sans-serif"
               fontWeight={700}
@@ -55,7 +55,7 @@ const NotFound = () => {
           ) : (
             <Heading 
               as="h1" 
-              fontSize="clamp(4rem, 12vw, 8rem)"
+              fontSize="clamp(3.5rem, 15vw, 6rem)"
               fontFamily="'M PLUS Rounded 1c', sans-serif"
               fontWeight={700}
               color={textColor}
@@ -65,14 +65,14 @@ const NotFound = () => {
           )}
         </Box>
 
-        {/* Page Not Found text with subtle fuzzy effect */}
+        {/* Page Not Found text with subtle fuzzy effect - Balanced mobile and desktop */}
         <Box maxW="400px" mx="auto" position="relative" zIndex={10}>
           {mounted ? (
             <FuzzyText 
               baseIntensity={0.08} 
               hoverIntensity={0.3} 
               enableHover={true}
-              fontSize="clamp(1.125rem, 4vw, 1.5rem)"
+              fontSize="clamp(1.25rem, 5vw, 1.75rem)"
               color={textColor}
               fontFamily="'M PLUS Rounded 1c', sans-serif"
               fontWeight={400}
@@ -81,7 +81,7 @@ const NotFound = () => {
             </FuzzyText>
           ) : (
             <Text 
-              fontSize="clamp(1.125rem, 4vw, 1.5rem)"
+              fontSize="clamp(1.25rem, 5vw, 1.75rem)"
               fontFamily="'M PLUS Rounded 1c', sans-serif"
               fontWeight={400}
               color={textColor}
